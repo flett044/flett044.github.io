@@ -1,0 +1,252 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Card from "../components/Card.astro";
+import Heading from "../components/Heading.astro";
+
+//Project Components
+import PersonalWebsite from "../components/PersonalWebsite.astro";
+import DiscordScraper from "../components/DiscordScraper.astro";
+import Mazesolver from "../components/MazeSolver.astro";
+import DroidInventoryManager from "../components/DroidInventoryManager.astro";
+import ComputerAccessoriesOrderForm from "../components/ComputerAccessoriesOrderForm.astro";
+import SlotMachines from "../components/SlotMachines.astro";
+import GunGame from "../components/GunGame.astro";
+---
+
+<Layout title="Developer Portfolio">
+  <div id="contents">
+    <main class="container">
+      <div class="mb-16">
+        <Heading />
+        <p
+          class="mt-4 text-lg text-zinc-500 dark:text-zinc-400 font-light lg:text-xl"
+        >
+        TEST
+        </p>
+      </div>
+      <div class="mb-16">
+        <h2
+          class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white"
+        >
+          Skills
+        </h2>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          C#
+        </p>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          Python
+        </p>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          HTML
+        </p>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          Docker
+        </p>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          Networking
+        </p>
+      </div>
+      <div class="mb-16">
+        <h2
+          class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white"
+        >
+          Education
+        </h2>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          BS Computer Science (2025) - Davenport
+        </p>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          AS Computer Information Science (2020) - KVCC
+        </p>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          Computer Networking Certificate (2020) - KVCC
+        </p>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          TestOut PC Pro
+        </p>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          TestOut Windows Server Pro
+        </p>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          TestOut Networking Pro
+        </p>
+        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400"></p>
+          TestOut Security Pro
+        </p>
+      </div>
+      <h2
+        class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white mb-2"
+      >
+        My Projects
+      </h2>
+      <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="">
+          <Card
+            title="Personal Webite"
+            body="A personal website I built using Astro as a static template engine. HTML and CSS to adapt the template to suit my project."
+            tags="C#, HTML, Astro, CSS, Javascipt, Python"
+            github="https://github.com/flett044/flett044.github.io"
+          >
+            <PersonalWebsite />
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            title="Recursive Maze Solver"
+            body="A simple maze solver that uses recursion to solve a maze stored as an array. It will then transpose the maze across the Y axis and solve it again."
+            tags="C#"
+            github="https://github.com/flett044/Maze-Solver"
+          >
+            <Mazesolver />
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            title="Garry's Mod Gamemode"
+            body="This gamemode was written in GLUA. This was my first time using a game engine. It was challenging to put my vision into reality."
+            tags="GLUA"
+          >
+            <GunGame />
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            title="Discord Scraper"
+            body="A simple discord scraper written in Python. I used the Python library request to pull data from the Discord API. Then a JSON library to save to data for later viewing. The GUI portion uses tKinter. This program was a proof of concept."
+            tags="C#"
+            github="https://github.com/flett044/DiscordScraper"
+          >
+            <DiscordScraper />
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            title="Droid Inventory Manager"
+            body="A droid manager inventory system written in C#. This program uses a bucket sort to sort the droids by model and a modified merge sort to sort by total cost. I used unit tests to test if droids where being sorted and added to the array correctly."
+            tags="C#"
+            github="https://github.com/flett044/Droid-Manager"
+          >
+            <DroidInventoryManager />
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            title="Computer Accessories Order Form"
+            body="This program is a simple order form for computer parts written in C#. Uses multi level accumulation to calculate totals for management to read later."
+            tags="C#"
+            github="https://github.com/flett044/Computer-Accessories-Order-Form"
+          >
+            <ComputerAccessoriesOrderForm />
+          </Card>
+        </div>
+        <div class="">
+          <Card
+            title="Slot Machines"
+            body="A slot machine game written in C#. This programs will allow you to add a player, set your bet, and number of spins. This will track the total number of wins and total amount won. Results will be output to file. Previous results can be read from a file of necessary."
+            tags="C#"
+            github="https://github.com/flett044/Slot-Machine-Game"
+          >
+            <SlotMachines />
+          </Card>
+        </div>
+      </div>
+    </main>
+  </div>
+</Layout>
+
+<style is:global>
+  main {
+    margin: auto;
+    padding: 0.75rem;
+    width: 1100px;
+    max-width: 100%;
+    color: white;
+    line-height: 1.6;
+  }
+  .project-image {
+    max-width: 100% !important;
+    overflow: hidden;
+  }
+  .project-cards {
+  }
+  .video-wrapper {
+    background: #111111;
+    padding: calc(1.5rem - 1px);
+    line-height: 1.4;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  .project-column > div {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .projects-alt > li {
+    gap: 1rem !important;
+  }
+  .astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+  }
+
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+    font-size: 2.75rem;
+  }
+  .instructions {
+    margin-bottom: 2rem;
+    border: 1px solid rgba(var(--accent-light), 25%);
+    background: linear-gradient(
+      rgba(var(--accent-dark), 66%),
+      rgba(var(--accent-dark), 33%)
+    );
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  .instructions code {
+    font-size: 0.8em;
+    font-weight: bold;
+    background: rgba(var(--accent-light), 12%);
+    color: rgb(var(--accent-light));
+    border-radius: 4px;
+    padding: 0.3em 0.4em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent-light));
+  }
+  .link-card-grid {
+    display: grid;
+    gap: 0;
+    padding: 0;
+  }
+  .read-more {
+    color: #fff;
+  }
+  details {
+    position: relative;
+    top: -1px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    max-width: 900px;
+  }
+  details > div {
+    max-width: 830px;
+  }
+
+  summary:hover {
+    cursor: pointer;
+  }
+</style>
+
+<script></script>
