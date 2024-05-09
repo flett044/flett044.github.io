@@ -1,6 +1,6 @@
 # Shadowstack Portfolio
 
-This project is a web developer portfolio built with Astro and deployed to a hosting service like vercel or netlify or cloudflare.
+This project is a software developer portfolio built with Astro and deployed to a hosting service like vercel or netlify or cloudflare.
 
 ## 🚀 Quick start
 
