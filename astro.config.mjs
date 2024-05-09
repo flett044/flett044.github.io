@@ -7,4 +7,5 @@ export default defineConfig({
     service: squooshImageService(),
   },
   integrations: [tailwind()],
+  site: 'https://calebhuyser.me'
 });
